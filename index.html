@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kerem Ekec</title>
+  <meta name="description" content="Kerem Ekec: M.S. student at Koç University working on computational imaging, lensless and holographic imaging, and imaging through scattering media.">
+  <meta property="og:title" content="Kerem Ekec">
+  <meta property="og:description" content="Computational imaging at Koç University.">
+  <meta property="og:image" content="https://ekeckerem.github.io/assets/photo.jpg">
+
+  <!-- Apply the saved theme before the page paints, so there is no flash. Dark is the default. -->
+  <script>
+    (function () {
+      var t = 'dark';
+      try { t = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">Kerem Ekec</a>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="assets/Ekec_CV.pdf">CV</a>
+        <button id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch theme">
+          <!-- sun: shown in dark mode -->
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg>
+          <!-- moon: shown in light mode -->
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro">
+      <img class="photo" src="assets/photo.jpg" width="480" height="480" alt="Kerem Ekec">
+      <div class="intro-text">
+        <h1>Kerem Ekec</h1>
+        <p class="role">M.S. Student, Biomedical Sciences and Engineering<br>Koç University, İstanbul</p>
+        <ul class="links">
+          <li><a href="mailto:kekec25@ku.edu.tr">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>kekec25@ku.edu.tr</a></li>
+          <li><a href="https://scholar.google.com/citations?user=y0BFVZMAAAAJ">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Google Scholar</a></li>
+          <li><a href="https://orcid.org/0009-0001-8524-7912">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="currentColor"/><circle cx="7.4" cy="6.9" r="1.25" fill="var(--bg)"/><rect x="6.45" y="9.2" width="1.9" height="8.6" fill="var(--bg)"/><path d="M11.2 10.1h2.4c2.3 0 3.8 1.6 3.8 3.8s-1.5 3.8-3.8 3.8h-2.4z" fill="none" stroke="var(--bg)" stroke-width="1.8"/></svg>ORCID</a></li>
+          <li><a href="https://github.com/ekeckerem">
+            <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a></li>
+          <li><a href="assets/Ekec_CV.pdf">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>CV</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am an M.S. student in Biomedical Sciences and Engineering at Koç University, advised by
+        Asst. Prof. Uğur Teğin in the Laboratory of Photonic Technologies. I work on computational
+        imaging: building optical systems together with the algorithms that recover images from them.
+        My recent work covers lensless imaging with neural operators, holographic wavefront training
+        through scattering media, and imaging through multimode fibers. I am supported by the
+        TÜBİTAK 2232 Graduate Project Scholarship.
+      </p>
+      <p>
+        Previously, I received my B.S. in Physics from Middle East Technical University (METU), where I
+        was advised by Prof. Alpan Bek and worked in the Environmental Photonics Lab on deep compressive
+        microendoscopy through multimode fibers.
+      </p>
+      <p class="interests">
+        <span>Interests</span>
+        Computational imaging · lensless and holographic imaging · physics-informed deep learning and
+        neural operators for inverse problems · compressed sensing · wavefront shaping and imaging
+        through scattering media · optical computing
+      </p>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research">
+      <h2>Research</h2>
+
+      <article class="project">
+        <!-- Lazy video: loads and plays only while on screen (see script at the bottom). -->
+        <video class="fig" id="holo-video" muted loop playsinline preload="none"
+               width="1134" height="850"
+               poster="assets/figures/holo-poster.webp"
+               title="Click to enlarge"
+               aria-label="Animation of the training loop: the SLM phase is sent through a diffuser, the hologram gives the measured field, and the adjoint model computes the gradient that updates the SLM, over 50 iterations until a target image forms.">
+          <source src="assets/figures/holo-loop.mp4" type="video/mp4">
+        </video>
+        <div class="project-text">
+          <h3>Holographic gradients through disorder</h3>
+          <p>
+            An off-axis holography setup measures the full complex field in a single shot. We use that
+            measurement to compute gradients and train wavefronts in situ through scattering media.
+          </p>
+          <p class="meta">arXiv 2026</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <img class="fig"
+             src="assets/figures/lensless-fno-1600.webp"
+             srcset="assets/figures/lensless-fno-800.webp 800w, assets/figures/lensless-fno-1600.webp 1600w"
+             sizes="(max-width: 560px) 100vw, 240px"
+             width="1600" height="1200" loading="lazy" decoding="async"
+             alt="Lensless imaging model: a scene is convolved with a diffuser onto a coarse sensor grid, and a Fourier neural operator reconstructs it; trained on a coarse grid, tested on a fine grid with the same spectral weights.">
+        <div class="project-text">
+          <h3>Resolution-agnostic lensless imaging</h3>
+          <p>
+            Lensless cameras replace the lens with a thin mask and recover the image computationally.
+            We use Fourier neural operators for this reconstruction, so the model is not tied to a single
+            image resolution.
+          </p>
+          <p class="meta">Optics Express 2026 · Oral at SPIE Optics + Photonics 2026</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <img class="fig"
+             src="assets/figures/mmf-combiner-1600.webp"
+             srcset="assets/figures/mmf-combiner-800.webp 800w, assets/figures/mmf-combiner-1600.webp 1600w"
+             sizes="(max-width: 560px) 100vw, 240px"
+             width="1600" height="1200" loading="lazy" decoding="async"
+             alt="Optical multiplexing with a multimode fiber combiner: two images from a DMD enter separate input fibers, mix into one speckle in the output fiber, and a ResU-Net (CombinerNet) decodes both images from that single speckle.">
+        <div class="project-text">
+          <h3>Imaging through multimode fibers</h3>
+          <p>
+            A multimode fiber combiner mixes two input images into a single speckle pattern. A neural
+            network (CombinerNet) recovers both images from that one measurement, so several channels share
+            a single fiber and camera. Ongoing work brings deep learning and compressed sensing to fiber
+            and SPAD-based imaging.
+          </p>
+          <p class="meta">Poster at SPIE Optics + Photonics 2026</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <p class="pub-title">Single-shot holographic gradients for training wavefronts through disorder</p>
+          <p class="pub-authors"><strong>K. Ekec</strong>, B. U. Kesgin, U. Teğin</p>
+          <p class="pub-venue"><em>arXiv preprint</em> arXiv:2611.27439, 2026</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2611.27439">arXiv</a>
+            <a href="https://github.com/utegin-lpt/HolographicGradients"><svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Code</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">Resolution-agnostic lensless imaging via Fourier neural operators</p>
+          <p class="pub-authors"><strong>K. Ekec</strong>, U. Teğin</p>
+          <p class="pub-venue"><em>Optics Express</em> 34(18), 34757, 2026</p>
+          <p class="pub-links">
+            <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-18-34757">Paper</a>
+            <a href="https://github.com/utegin-lpt/LenslessImagingwFNO"><svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Code</a>
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ TALKS ============ -->
+    <section id="talks">
+      <h2>Talks</h2>
+      <ul class="talks">
+        <li>
+          <span class="talk-kind">Oral</span>
+          <div>
+            <a href="https://spie.org/optics-photonics/presentation/Resolution-agnostic-lensless-imaging-via-Fourier-neural-operators/PC14198-68">Resolution-agnostic lensless imaging via Fourier neural operators</a>
+            <p class="meta">SPIE Optics + Photonics, Emerging Topics in AI · San Diego, Aug 2026</p>
+          </div>
+        </li>
+        <li>
+          <span class="talk-kind">Poster</span>
+          <div>
+            <a href="https://spie.org/optics-photonics/presentation/High-fidelity-imaging-and-reconstruction-via-multimode-fiber-combiners/PC14198-76">High-fidelity imaging and reconstruction via multimode fiber combiners</a>
+            <p class="meta">SPIE Optics + Photonics, Emerging Topics in AI · San Diego, Aug 2026</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ HONORS & SERVICE ============ -->
+    <section id="misc">
+      <h2>Honors &amp; Service</h2>
+      <dl class="facts">
+        <dt>Fellowships</dt>
+        <dd>TÜBİTAK 2232 Graduate Project Scholarship (2025–) · KU Project-Based Graduate Scholarship (2025–) · TÜBİTAK 2205 Undergraduate Scholarship (2020–2025)</dd>
+        <dt>Reviewing</dt>
+        <dd><em>Communications Engineering</em>, <em>Optics Express</em>, <em>Applied Optics</em></dd>
+        <dt>Teaching</dt>
+        <dd>TA, Koç University: ELEC 491 Senior Design Project; ENGR 200 Probability and Random Variables</dd>
+        <dt>Community</dt>
+        <dd>Vice President, Optica Student Chapter at Koç University (2026–) · Member of Optica and SPIE</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Kerem Ekec · Last updated November 2026</p>
+  </footer>
+
+  <!-- Full-size view for research thumbnails -->
+  <dialog id="lightbox" class="lightbox" aria-label="Enlarged figure">
+    <button type="button" class="lightbox-close" aria-label="Close">✕</button>
+    <div class="lightbox-content"></div>
+  </dialog>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+      function label() {
+        var dark = root.getAttribute('data-theme') === 'dark';
+        btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+      label();
+      btn.addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        label();
+      });
+    })();
+
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Holography thumbnail video: download/play only while visible, pause off screen.
+    // With "reduce motion" on, it stays a still poster (the enlarged view has controls).
+    (function () {
+      var v = document.getElementById('holo-video');
+      if (!v || reduceMotion) return;
+      function play() { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      if (!('IntersectionObserver' in window)) { v.preload = 'auto'; play(); return; }
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) play(); else v.pause(); });
+      }, { threshold: 0.25 }).observe(v);
+    })();
+
+    // Click (or Enter/Space) on a thumbnail opens it full size.
+    (function () {
+      var dlg = document.getElementById('lightbox');
+      if (!dlg || !dlg.showModal) return;
+      var slot = dlg.querySelector('.lightbox-content');
+
+      function largest(img) {
+        if (!img.srcset) return img.src;
+        return img.srcset.split(',').pop().trim().split(/\s+/)[0];
+      }
+      function open(fig) {
+        var node;
+        if (fig.tagName === 'VIDEO') {
+          node = document.createElement('video');
+          node.src = fig.querySelector('source').src;
+          node.poster = fig.poster;
+          node.muted = true; node.loop = true; node.playsInline = true; node.controls = true;
+          if (!reduceMotion) node.autoplay = true;
+          node.setAttribute('aria-label', fig.getAttribute('aria-label') || '');
+        } else {
+          node = new Image();
+          node.src = largest(fig);
+          node.alt = fig.alt;
+        }
+        slot.replaceChildren(node);
+        dlg.showModal();
+      }
+
+      document.querySelectorAll('.project .fig').forEach(function (fig) {
+        fig.tabIndex = 0;
+        fig.setAttribute('role', 'button');
+        fig.addEventListener('click', function () { open(fig); });
+        fig.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(fig); }
+        });
+      });
+      dlg.querySelector('.lightbox-close').addEventListener('click', function () { dlg.close(); });
+      dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });  // click outside
+      dlg.addEventListener('close', function () { slot.replaceChildren(); });              // stops the video
+    })();
+  </script>
+</body>
+</html>
